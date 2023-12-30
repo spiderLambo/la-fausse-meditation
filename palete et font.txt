@@ -1,5 +1,21 @@
-couleur fond:
+couleur fond :
     bleu a: #d0eae6
     blanc a : #f9f9fb
     blanc u : #EFF8F3
     vert a : #A8F3C9
+
+
+font :
+    -Poppins
+    -Fira Sans
+    -Zeyada
+    -Libre Barcode 39
+    -Linefont
+    -Herr Von Muellerhoff
+    -Kristi
+    -Flow Circular
+    -Indie Flower
+    -Single Day
+    -Redacted
+    -Redacted Script
+    -Wavefont
