@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    height: 200vh;
+    background-color: #f9f9fb;
+}
+
+
+
+
+
+/* Gestion des formes dans le fond */
+
+#background {
+    z-index: -10;
+    position: fixed;
+    top: 0;
+}
+
+#background .forme {
+    position: absolute;
+    width: 6em;
+    height: 12em;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 50%, 50% 50%);
+}
+
+#background .bleu {
+    background-color: rgba(208, 234, 230, .6);
+}
+#background .bleu:nth-child(1) {
+    animation: move1 360s ease-in-out infinite;
+}
+#background .bleu:nth-child(2) {
+    animation: move3 360s ease-in-out infinite;
+}
+
+#background .vert {
+    background-color: rgba(168, 243, 201, .6);
+}
+#background .vert:nth-child(3) {
+    animation: move2 360s ease-in-out infinite;
+}
+#background .vert:nth-child(4) {
+    animation: move4 360s ease-in-out infinite;
+}
+
+
+
+
+
+/* Animations */
+
+@keyframes move1 {
+    20% {
+        translate: 30vw 60vh;
+        rotate: 45deg;
+    }
+    40% {
+        translate: 60vw 50vh;
+        rotate: 115deg;
+    }
+    60% {
+        translate: 90vw 50vh;
+        rotate: 180deg;
+    }
+    80% {
+        translate: 90vw 0vh;
+        rotate: 360deg;
+    }
+}
+@keyframes move2 {
+    20% {
+        translate: 90vw 50vh;
+        rotate: 180deg;
+    }
+    40% {
+        translate: 30vw 60vh;
+        rotate: 45deg;
+    }
+    60% {
+        translate: 90vw 0vh;
+        rotate: 360deg;
+    }
+    80% {
+        translate: 60vw 50vh;
+        rotate: 115deg;
+    }
+}
+@keyframes move3 {
+    40% {
+        translate: 90vw 0vh;
+        rotate: 360deg;
+    }
+    60% {
+        translate: 60vw 50vh;
+        rotate: 115deg;
+    }
+    70% {
+        translate: 90vw 50vh;
+        rotate: 180deg;
+    }
+    80% {
+        translate: 30vw 60vh;
+        rotate: 45deg;
+    }
+}
+@keyframes move4 {
+    20% {
+        translate: 60vw 50vh;
+        rotate: 115deg;
+    }
+    40% {
+        translate: 90vw 50vh;
+        rotate: 180deg;
+    }
+    60% {
+        translate: 30vw 60vh;
+        rotate: 45deg;
+    }
+    70% {
+        translate: 90vw 0vh;
+        rotate: 360deg;
+    }
+}
