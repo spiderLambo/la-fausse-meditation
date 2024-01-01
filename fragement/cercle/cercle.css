@@ -1,7 +1,32 @@
-.inspiration-expiration,
-.cercle {
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    background-color: #0095ff;
+body {
+    background-color: #2196f3;
 }
+
+.cercle {
+    /* Faire la forme du .cercle */
+    border-radius: 50%;
+    width: 30em;
+    height: 30em;
+    background-color: #4dabf6;
+
+    /* Centrer le contenu du texte */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* Zone d'ombre */
+    box-shadow: 3px 3px 5px 1px #eef7fe,
+             3px -3px 5px 1px #eef7fe,
+             -3px 3px 5px 1px #eef7fe,
+             -3px -3px 5px 1px #eef7fe;
+}
+
+/* Ajuster les tailles des textes */
+.cercle p,
+button {
+    font-size: 4em;
+    color: #eef7fe;
+}
+
+
