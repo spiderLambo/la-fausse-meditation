@@ -20,6 +20,9 @@ body {
              3px -3px 5px 1px #eef7fe,
              -3px 3px 5px 1px #eef7fe,
              -3px -3px 5px 1px #eef7fe;
+
+    /* Pour l'animation du cercle, sans qu'il soit sacadé */
+    transition: 1s linear;
 }
 
 /* Ajuster les tailles des textes */
@@ -28,5 +31,4 @@ button {
     font-size: 4em;
     color: #eef7fe;
 }
-
 
