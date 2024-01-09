@@ -7,6 +7,7 @@ let tempsEnSecondes = 180; // definition du temps en secondes
 let minute; // Définition du nombre de minutes
 let secondes; // Définition du nombre de secondes
 let tailleCercle = 30; // Définition de la taille du cercle
+let alternance = true;
 
 // Fonction pour réduire la taille du cercle
 let reduireTaille = () => {
@@ -30,6 +31,11 @@ let augmenterTaille = () => {
   respiration.innerHTML = "Expirer"; // Indiquer l'expiration
 };
 
+let animation = () => {
+  setTimeout(reduireTaille(), 1000);
+  setTimeout(augmenterTaille(), 1000);
+};
+
 // L'action s'éffectue au click
 boutton.addEventListener("click", () => {
   // Mettre en place le timer
@@ -41,5 +47,12 @@ boutton.addEventListener("click", () => {
       secondes < 10 ? minute + ":0" + secondes : minute + ":" + secondes; // Afficher la durée, si le compteur de secondes est inferieur à 10, rajouter un 0 devant
 
     tempsEnSecondes = tempsEnSecondes <= 0 ? 0 : tempsEnSecondes - 1; // Si le temps en secondes est inferieur ou egal à 0 alors, on ne change pas sa valeur, sinon, on retire 1
+
+    if (alternance) {
+      reduireTaille();
+    } else {
+      augmenterTaille();
+    }
+    alternance = !alternance;
   }, 1000); // Chaque secondes
 });
