@@ -21,14 +21,21 @@ body {
              -3px 3px 5px 1px #eef7fe,
              -3px -3px 5px 1px #eef7fe;
 
-    /* Pour l'animation du cercle, sans qu'il soit sacadé */
+    /* Pour que l'animation du cercle ne soit pas sacadé */
     transition: 1s linear;
+    rotate: 10deg;
 }
 
-/* Ajuster les tailles des textes */
+/* Ajuster les tailles, la couleur et la font des textes */
 .cercle p,
 button {
     font-size: 4em;
     color: #eef7fe;
+    font-family: 'Poppins', sans-serif;
 }
 
+/* Changer la couleur du boutton, et lui arrondir les bords */
+button {
+    border-radius: 10px;
+    background-color: #1a1a1a;
+}

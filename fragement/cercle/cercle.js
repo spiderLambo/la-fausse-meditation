@@ -3,11 +3,11 @@ const boutton = document.querySelector("button"); // Element servant à commence
 const cercle = document.querySelector(".cercle"); // Element servant de cercle
 const respiration = document.querySelector(".respiration"); // Element servant d'indicateur sur la respiration
 
-let tempsEnSecondes = 180; // definition du temps en secondes
+let tempsEnSecondes = 32; // definition du temps en secondes
 let minute; // Définition du nombre de minutes
 let secondes; // Définition du nombre de secondes
 let tailleCercle = 30; // Définition de la taille du cercle
-let alternance = true;
+let rotation = 0; // Définition de la variable pour faire tourner cercle
 
 // Fonction pour réduire la taille du cercle
 let reduireTaille = () => {
@@ -48,11 +48,35 @@ boutton.addEventListener("click", () => {
 
     tempsEnSecondes = tempsEnSecondes <= 0 ? 0 : tempsEnSecondes - 1; // Si le temps en secondes est inferieur ou egal à 0 alors, on ne change pas sa valeur, sinon, on retire 1
 
-    if (alternance) {
+    // Animation faite en fonction du nombre de secondes
+    if (
+      tempsEnSecondes >= 70 &&
+      (tempsEnSecondes % 4 === 1 || tempsEnSecondes % 4 === 2)
+    ) {
       reduireTaille();
-    } else {
+    }
+    if (
+      tempsEnSecondes >= 70 &&
+      (tempsEnSecondes % 4 === 3 || tempsEnSecondes % 4 === 0)
+    ) {
       augmenterTaille();
     }
-    alternance = !alternance;
+    if (70 > tempsEnSecondes && tempsEnSecondes >= 66) {
+      reduireTaille();
+    }
+    if (66 > tempsEnSecondes && tempsEnSecondes >= 60) {
+      augmenterTaille();
+    }
+    if (60 > tempsEnSecondes && tempsEnSecondes >= 50) {
+      reduireTaille();
+    }
+    if (50 > tempsEnSecondes && tempsEnSecondes >= 30) {
+      augmenterTaille();
+    }
+    if (30 > tempsEnSecondes) {
+      reduireTaille();
+      cercle.tyle.rotate = rotation + "deg";
+      rotation++;
+    }
   }, 1000); // Chaque secondes
 });
