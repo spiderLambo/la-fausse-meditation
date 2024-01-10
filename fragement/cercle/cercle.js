@@ -3,11 +3,10 @@ const boutton = document.querySelector("button"); // Element servant à commence
 const cercle = document.querySelector(".cercle"); // Element servant de cercle
 const respiration = document.querySelector(".respiration"); // Element servant d'indicateur sur la respiration
 
-let tempsEnSecondes = 32; // definition du temps en secondes
+let tempsEnSecondes = 2; // definition du temps en secondes
 let minute; // Définition du nombre de minutes
 let secondes; // Définition du nombre de secondes
 let tailleCercle = 30; // Définition de la taille du cercle
-let rotation = 0; // Définition de la variable pour faire tourner cercle
 
 // Fonction pour réduire la taille du cercle
 let reduireTaille = () => {
@@ -31,9 +30,13 @@ let augmenterTaille = () => {
   respiration.innerHTML = "Expirer"; // Indiquer l'expiration
 };
 
-let animation = () => {
-  setTimeout(reduireTaille(), 1000);
-  setTimeout(augmenterTaille(), 1000);
+// arreter l'animation
+let arret = () => {
+  cercle.style.animation = "none";
+  // Augmenter la taille du cercle
+  cercle.style.width = "30em";
+  cercle.style.height = "30em";
+  respiration.innerHTML = ""; // Indiquer l'expiration
 };
 
 // L'action s'éffectue au click
@@ -75,8 +78,12 @@ boutton.addEventListener("click", () => {
     }
     if (30 > tempsEnSecondes) {
       reduireTaille();
-      cercle.tyle.rotate = rotation + "deg";
-      rotation++;
+    }
+    if (20 > tempsEnSecondes) {
+      cercle.style.animation = "rotation 1s linear infinite";
+    }
+    if (0 === tempsEnSecondes) {
+      arret();
     }
   }, 1000); // Chaque secondes
 });

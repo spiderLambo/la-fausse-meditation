@@ -1,5 +1,8 @@
 body {
     background-color: #2196f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cercle {
@@ -23,7 +26,6 @@ body {
 
     /* Pour que l'animation du cercle ne soit pas sacadé */
     transition: 1s linear;
-    rotate: 10deg;
 }
 
 /* Ajuster les tailles, la couleur et la font des textes */
@@ -38,4 +40,14 @@ button {
 button {
     border-radius: 10px;
     background-color: #1a1a1a;
+}
+
+/* Animation pour la rotation du cercle */
+@keyframes rotation {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
 }
