@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+}
