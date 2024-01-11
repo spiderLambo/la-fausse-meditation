@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
     <form id="formulaire">
         <div class="nom">
-          <label for="nom">Entrer votre nom et prénom: </label>
+          <label for="nom">Entrer votre nom: </label>
           <input type="text" name="nom" required />
         </div>
+        <div class="prenom">
+          <label for="prenom">Entrer votre prénom: </label>
+          <input type="text" name="prenom" required />
+        </div>
         <div class="age">
-          <label for="email">Entrer votre âge: </label>
+          <label for="age">Entrer votre âge: </label>
           <input type="number" name="age" required />
         </div>
-        <div class="form-example">
-          <input type="submit" value="Subscribe!" />
+        <div class="email">
+          <label for="email">Entrer votre email: </label>
+          <input type="email" name="email" required />
+        </div>
+        <div class="envois">
+          <input type="submit" value="Envoyer" />
         </div>
     </form>
 </body>
