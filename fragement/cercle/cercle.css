@@ -19,10 +19,7 @@ body {
     justify-content: center;
 
     /* Zone d'ombre */
-    box-shadow: 3px 3px 5px 1px #eef7fe,
-             3px -3px 5px 1px #eef7fe,
-             -3px 3px 5px 1px #eef7fe,
-             -3px -3px 5px 1px #eef7fe;
+    box-shadow: 0px 4px 18px 8px #eef7fe;
 
     /* Pour que l'animation du cercle ne soit pas sacadé */
     transition: 1s linear;

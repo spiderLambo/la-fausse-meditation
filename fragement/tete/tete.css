@@ -1,0 +1,41 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    --couleur-fond: red;
+}
+
+body {
+    margin: 0;
+    position: relative;
+}
+
+#tete {
+    display: flex;
+    justify-content: start;
+    overflow: hidden;
+    height: 5em;
+}
+
+#tete p {
+    margin-top: 0;
+    font-size: 3em;
+}
+
+#tete ul {
+    margin-top: auto;
+    list-style-type: none;
+    translate: 0 -100%;
+}
+
+#tete ul li,
+button {
+    font-size: 3em;
+}
+
+@keyframes remonter {
+    from {
+        translate: 0;
+    }
+    to {
+        translate: 0 -100%;
+    }
+}
