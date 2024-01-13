@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* -------------- HEADER -------------- */
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: #3BB486;
+    display: flex;
+    justify-content: space-around;
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    background: linear-gradient(to top,transparent,#3BB486);
+    width: 100%;
+    height: 0.2em;
+    top: 5em;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    flex: 1 1 40em;
+    top: 30px;
+}
+
+.menu {
+    margin: 1.5em;
+    position: relative;
+    display: flex;
+    flex: 1 1 40em;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu-items > a{
+    margin: 5em;
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+.menu-items > a:hover{
+    color: rgb(46, 63, 53);
+}
+
+.titre {
+    margin: 1em 0 2em 9em;
+    display: flex;
+}
+
+.titre-1 {
+    font-family: "Poppins", sans-serif;
+    font-size: xx-large;
+    color: rgb(12, 156, 120);
+}
+
+.titre-2 {
+    font-family: "Poppins", sans-serif;
+    font-size: xx-large;
+    color: rgb(4, 29, 16);
+}
+
+
+/* -------------- FOOTER -------------- */
+
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a;
+}
