@@ -27,14 +27,14 @@ body {
 
 /* Ajuster les tailles, la couleur et la font des textes */
 .cercle p,
-button {
+button.cerclebtn {
     font-size: 4em;
     color: #eef7fe;
     font-family: 'Poppins', sans-serif;
 }
 
 /* Changer la couleur du boutton, et lui arrondir les bords */
-button {
+button.cerclebtn {
     border-radius: 10px;
     background-color: #1a1a1a;
 }
