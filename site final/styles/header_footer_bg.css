@@ -18,7 +18,6 @@
 .patate-bleue-3 {
     z-index: -3;
     position: fixed;
-    transition: transform .4s ease-in-out
 }
 
 .patate-verte-1 {

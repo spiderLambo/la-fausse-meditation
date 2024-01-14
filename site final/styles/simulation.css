@@ -8,6 +8,7 @@
 /* -------------- DIFFERENTS PARAGRAPHES -------------- */
 
 
+#cercle,
 #tete,
 #caf,
 #intro {
@@ -63,5 +64,53 @@ p {
     }
     to {
         translate: 0 -100%;
+    }
+}
+
+
+/* -------------- CERCLE -------------- */
+
+
+.cercle-forme {
+    /* Faire la forme du .cercle */
+    border-radius: 50%;
+    width: 30em;
+    height: 30em;
+    background-color: #4dabf6;
+
+    /* Centrer le contenu du texte */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* Zone d'ombre */
+    box-shadow: 0px 4px 18px 8px #eef7fe;
+
+    /* Pour que l'animation du cercle ne soit pas sacadé */
+    transition: 1s linear;
+}
+
+/* Ajuster les tailles, la couleur et la font des textes */
+.cercle-forme p,
+button.cerclebtn {
+    font-size: 4em;
+    color: #eef7fe;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Changer la couleur du boutton, et lui arrondir les bords */
+button.cerclebtn {
+    border-radius: 10px;
+    background-color: #1a1a1a;
+}
+
+/* Animation pour la rotation du cercle */
+@keyframes rotation {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
     }
 }

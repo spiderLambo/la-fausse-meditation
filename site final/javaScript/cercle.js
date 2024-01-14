@@ -1,6 +1,6 @@
 const timer = document.querySelector(".timer"); // Element servant de timer
 const boutton = document.querySelector(".cerclebtn"); // Element servant à commencer le timer
-const cercle = document.querySelector(".cercle"); // Element servant de cercle
+const cercle = document.querySelector(".cercle-forme"); // Element servant de cercle
 const respiration = document.querySelector(".respiration"); // Element servant d'indicateur sur la respiration
 
 let tempsEnSecondes = 90; // definition du temps en secondes
