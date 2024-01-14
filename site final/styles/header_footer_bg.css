@@ -6,6 +6,53 @@
 }
 
 
+/* -------------- BACKGROUND -------------- */
+
+
+/*  Position des patates */
+.patate-verte-1,
+.patate-verte-2,
+.patate-verte-3,
+.patate-bleue-1,
+.patate-bleue-2,
+.patate-bleue-3 {
+    z-index: -3;
+    position: fixed;
+    transition: transform .4s ease-in-out
+}
+
+.patate-verte-1 {
+    left: 2em;
+    bottom: 2em;
+    rotate: 20deg;
+}
+.patate-verte-2 {
+    left: 48em;
+    bottom: 28em;
+    rotate: 222deg;
+}
+.patate-verte-3 {
+    left: 10em;
+    bottom: 34em;
+    rotate: 328deg;
+}
+.patate-bleue-1 {
+    left: 76em;
+    bottom: 8em;
+    rotate: 190deg;
+}
+.patate-bleue-2 {
+    left: 23em;
+    bottom: 18em;
+    rotate: 40deg;
+}
+.patate-bleue-3 {
+    left: 73em;
+    bottom: 42em;
+    rotate: 320deg;
+}
+
+
 /* -------------- HEADER -------------- */
 
 header {
