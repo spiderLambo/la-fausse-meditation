@@ -1,4 +1,4 @@
 document.querySelector(".tetebtn").addEventListener("click", () => {
-  document.querySelector("#tete ul").style.animation = "remonter 40s linear";
+  document.querySelector("#tete ul").style.animation = "remonter 90s linear";
 });
 // Quand on clique sur le boutton, l'animation se déclanche
