@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0;
+}
+
+.bienfaits{
+    display: block;
+}
+
+h1{
+    font-family: "Poppins", sans-serif; 
+}
+
+.mental{
+    background-color: rgb(116, 151, 128);
+    height: auto;
+    width: 50em;
+    padding: 4em;
+    border-radius: 2em;
+    box-shadow: 0px 4px 18px 8px rgb(116 151 128 / 50%);
+    margin: 5em auto 5em 20em;
+}
+
+.hiearchie{
+    background-color: rgb(116, 151, 128);
+    height: auto;
+    width: 50em;
+    padding: 4em;
+    border-radius: 2em;
+    box-shadow: 0px 4px 18px 8px rgb(116 151 128 / 50%);
+    margin: 5em 20em 5em auto;
+}
+
+.relation{
+    background-color: rgb(116, 151, 128);
+    height: auto;
+    width: 50em;
+    padding: 4em;
+    border-radius: 2em;
+    box-shadow: 0px 4px 18px 8px rgb(116 151 128 / 50%);
+    margin: 5em auto 5em 20em;
+}
+
+.vrai-potentiel{
+    background-color: rgb(116, 151, 128);
+    height: auto;
+    width: 50em;
+    padding: 4em;
+    border-radius: 2em;
+    box-shadow: 0px 4px 18px 8px rgb(116 151 128 / 50%);
+    margin: 5em 20em 5em auto;
+}
+
+.mental-txt{
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+}
+
+.hiearchie-txt{
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+}
+
+.relation-txt{
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+}
+
+.vrai-potentiel-txt{
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+}
