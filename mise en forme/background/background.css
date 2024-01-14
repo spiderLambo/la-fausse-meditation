@@ -1,75 +1,62 @@
+/* -------------- POSITION DES PATATES -------------- */
+
+
+.patate-verte-1,
+.patate-verte-2,
+.patate-verte-3,
+.patate-bleue-1,
+.patate-bleue-2,
+.patate-bleue-3 {
+    position: fixed;
+    transition: transform .4s ease-in-out
+}
+
+
 .patate-verte-1 {
     left: 2em;
     bottom: 2em;
-    position: fixed;
     rotate: 20deg;
-    transition: transform .4s ease-in-out
 }
 
 .patate-verte-2 {
     left: 48em;
     bottom: 28em;
-    position: fixed;
     rotate: 222deg;
-    transition: transform .4s ease-in-out
 }
 
 .patate-verte-3 {
     left: 10em;
     bottom: 34em;
-    position: fixed;
     rotate: 328deg;
-    transition: transform .4s ease-in-out
 }
 
 .patate-bleue-1 {
     left: 76em;
     bottom: 8em;
-    position: fixed;
     rotate: 190deg;
-    transition: transform .4s ease-in-out
 }
 
 .patate-bleue-2 {
     left: 23em;
     bottom: 18em;
-    position: fixed;
     rotate: 40deg;
-    transition: transform .4s ease-in-out
 }
 
 .patate-bleue-3 {
     left: 73em;
     bottom: 42em;
-    position: fixed;
     rotate: 320deg;
-    transition: transform .4s ease-in-out
 }
 
-.patate-verte-1:hover {
-    transform: rotate(90deg) scale(1.2) ;
-}
 
-.patate-verte-2:hover {
-    transform: rotate(90deg) scale(1.2) ;
+/* -------------- SURVOL DES PATATES -------------- */
 
-}
 
-.patate-verte-3:hover {
-    transform: rotate(90deg) scale(1.2) ;
-
-}
-
-.patate-bleue-1:hover {
-    transform: rotate(90deg) scale(1.2) ;
-
-}
-
-.patate-bleue-2:hover {
-    transform: rotate(90deg) scale(1.2) ;
-
-}
-
+.patate-verte-1:hover,
+.patate-verte-2:hover,
+.patate-verte-3:hover,
+.patate-bleue-1:hover,
+.patate-bleue-2:hover,
 .patate-bleue-3:hover {
     transform: rotate(90deg) scale(1.2) ;
 
