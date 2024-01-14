@@ -45,6 +45,7 @@ p {
     display: flex;
     justify-content: start;
     overflow: hidden;
+    gap: 15px;
     height: 2em;
 }
 
