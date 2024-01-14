@@ -77,7 +77,7 @@ p {
     border-radius: 50%;
     width: 30em;
     height: 30em;
-    background-color: #339f9fd9;
+    background-color: #4dabf6;
 
     /* Centrer le contenu du texte */
     display: flex;
@@ -86,7 +86,7 @@ p {
     justify-content: center;
 
     /* Zone d'ombre */
-    box-shadow: 0px 4px 18px 8px #339f9f;
+    box-shadow: 0px 4px 18px 8px #eef7fe;
 
     /* Pour que l'animation du cercle ne soit pas sacadé */
     transition: 1s linear;
