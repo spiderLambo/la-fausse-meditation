@@ -1,0 +1,103 @@
+.bienfaits{
+    display: block;
+}
+
+h1{
+    font-family: "Poppins", sans-serif; 
+}
+
+.mental{
+    background-color: rgb(116, 151, 128);
+    height: auto;
+    width: 50em;
+    padding: 4em;
+    border-radius: 2em;
+    box-shadow: 0px 4px 18px 8px rgb(116 151 128 / 50%);
+    margin: 5em auto 5em 20em;
+    display: flex;
+}
+
+.mental-txt-part{
+    display: block;
+}
+
+.mental-img{
+    margin: 1em 4em 0em 1em;
+}
+
+.hiearchie{
+    background-color: rgb(116, 151, 128);
+    height: auto;
+    width: 50em;
+    padding: 4em;
+    border-radius: 2em;
+    box-shadow: 0px 4px 18px 8px rgb(116 151 128 / 50%);
+    margin: 5em 20em 5em auto;
+    display: flex;
+}
+
+.hiearchie-txt-part{
+    display: block;
+}
+
+.hierarchie-img{
+    margin: 2em 4em 0em 1em;
+}
+
+.relation{
+    background-color: rgb(116, 151, 128);
+    height: auto;
+    width: 50em;
+    padding: 4em;
+    border-radius: 2em;
+    box-shadow: 0px 4px 18px 8px rgb(116 151 128 / 50%);
+    margin: 5em auto 5em 20em;
+    display: flex;
+}
+
+.relation-txt-part{
+    display: block;
+}
+
+.relation-img{
+    margin: 2em 4em 0em 1em;
+}
+
+.vrai-potentiel{
+    background-color: rgb(116, 151, 128);
+    height: auto;
+    width: 50em;
+    padding: 4em;
+    border-radius: 2em;
+    box-shadow: 0px 4px 18px 8px rgb(116 151 128 / 50%);
+    margin: 5em 20em 5em auto;
+    display: flex;
+}
+
+.vrai-potentiel-txt-part{
+    display: block;
+}
+
+.potentiel-img{
+    margin: 2em 4em 0em 1em;
+}
+
+.mental-txt{
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+}
+
+.hiearchie-txt{
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+}
+
+.relation-txt{
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+}
+
+.vrai-potentiel-txt{
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+}

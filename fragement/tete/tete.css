@@ -1,0 +1,47 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+#tete {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tete p {
+    text-align: center;
+}
+
+.texte-tete {
+    display: flex;
+    justify-content: start;
+    overflow: hidden;
+    height: 5em;
+}
+
+.texte-tete p {
+    margin-top: 0;
+    font-size: 3em;
+}
+
+.texte-tete ul {
+    margin-top: auto;
+    list-style-type: none;
+    translate: 0 -100%;
+}
+
+#tete p,
+.texte-tete ul li,
+button.tetebtn {
+    font-size: 3em;
+}
+
+@keyframes remonter {
+    from {
+        translate: 0;
+    }
+    to {
+        translate: 0 -100%;
+    }
+}
