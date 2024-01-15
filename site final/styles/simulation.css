@@ -56,15 +56,15 @@ p {
 .texte-tete ul {
     margin-top: auto;
     list-style-type: none;
-    translate: 0 -100%;
+    transform: translateY(-100%);
 }
 
 @keyframes remonter {
     from {
-        translate: 0;
+        transform: translate(0);
     }
     to {
-        translate: 0 -100%;
+        transform: translateY(-100%);
     }
 }
 
@@ -109,9 +109,9 @@ button.cerclebtn {
 /* Animation pour la rotation du cercle */
 @keyframes rotation {
     from {
-        rotate: 0deg;
+        transform: rotate(0deg);
     }
     to {
-        rotate: 360deg;
+        transform: rotate(360deg);
     }
 }
